@@ -1,26 +1,32 @@
 package org.example;
 
-public class User {
+import java.math.BigDecimal;
 
-    private String email;
-    private String usauario;
+public class User extends Pessoa {
+
+    private BigDecimal id;
+    private String usuario;
     private String senha;
     private Cargo cargo;
 
-    public String getEmail() {
-        return email;
+    public User() {
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public BigDecimal getId() {
+        return id;
     }
 
-    public String getUsauario() {
-        return usauario;
+
+    public void setId(BigDecimal id) {
+        this.id = id;
     }
 
-    public void setUsauario(String usauario) {
-        this.usauario = usauario;
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
     public String getSenha() {

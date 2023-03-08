@@ -1,6 +1,6 @@
 package org.example;
 
-public enum Cor {
+public enum CorVeiculo {
     Amarelo,
     Azul,
     Bege,

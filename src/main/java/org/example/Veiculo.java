@@ -1,15 +1,25 @@
 package org.example;
 
+import java.math.BigDecimal;
+
 public class Veiculo {
 
+    private BigDecimal id;
     private ModeloCarro modelo;
     private FabricanteCarro fabricante;
     private String placa;
     private int ano;
-    private Cor cor;
-    private TipoVeiculo tipoVeiculo;
+    private CorVeiculo corVeiculo;
 
     public Veiculo() {
+    }
+
+    public BigDecimal getId() {
+        return id;
+    }
+
+    public void setId(BigDecimal id) {
+        this.id = id;
     }
 
     public ModeloCarro getModelo() {
@@ -44,19 +54,12 @@ public class Veiculo {
         this.ano = ano;
     }
 
-    public Cor getCor() {
-        return cor;
+    public CorVeiculo getCor() {
+        return corVeiculo;
     }
 
-    public void setCor(Cor cor) {
-        this.cor = cor;
+    public void setCor(CorVeiculo corVeiculo) {
+        this.corVeiculo = corVeiculo;
     }
 
-    public TipoVeiculo getTipoVeiculo() {
-        return tipoVeiculo;
-    }
-
-    public void setTipoVeiculo(TipoVeiculo tipoVeiculo) {
-        this.tipoVeiculo = tipoVeiculo;
-    }
 }
