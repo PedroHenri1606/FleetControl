@@ -7,7 +7,7 @@ public class User extends Pessoa {
     private BigDecimal id;
     private String usuario;
     private String senha;
-    private Cargo cargo;
+    private CargoUser cargoUser;
 
     public User() {
     }
@@ -37,11 +37,11 @@ public class User extends Pessoa {
         this.senha = senha;
     }
 
-    public Cargo getCargo() {
-        return cargo;
+    public CargoUser getCargo() {
+        return cargoUser;
     }
 
-    public void setCargo(Cargo cargo) {
-        this.cargo = cargo;
+    public void setCargo(CargoUser cargoUser) {
+        this.cargoUser = cargoUser;
     }
 }

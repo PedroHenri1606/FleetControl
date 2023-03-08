@@ -2,12 +2,12 @@ package org.example;
 
 import java.math.BigDecimal;
 
-public class FabricanteCarro {
+public class FabricanteVeiculo {
 
     private BigDecimal id;
     private String nomeFabricante;
 
-    public FabricanteCarro() {
+    public FabricanteVeiculo() {
     }
 
     public BigDecimal getId() {

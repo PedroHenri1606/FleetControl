@@ -1,6 +1,6 @@
 package org.example;
 
-public enum Cargo {
+public enum CargoUser {
     Admin,
     Motorista;
 }

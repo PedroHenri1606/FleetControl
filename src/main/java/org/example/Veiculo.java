@@ -5,11 +5,12 @@ import java.math.BigDecimal;
 public class Veiculo {
 
     private BigDecimal id;
-    private ModeloCarro modelo;
-    private FabricanteCarro fabricante;
+    private ModeloVeiculo modelo;
+    private FabricanteVeiculo fabricante;
     private String placa;
     private int ano;
     private CorVeiculo corVeiculo;
+    private Long quilometragemAtual;
 
     public Veiculo() {
     }
@@ -22,19 +23,19 @@ public class Veiculo {
         this.id = id;
     }
 
-    public ModeloCarro getModelo() {
+    public ModeloVeiculo getModelo() {
         return modelo;
     }
 
-    public void setModelo(ModeloCarro modelo) {
+    public void setModelo(ModeloVeiculo modelo) {
         this.modelo = modelo;
     }
 
-    public FabricanteCarro getFabricante() {
+    public FabricanteVeiculo getFabricante() {
         return fabricante;
     }
 
-    public void setFabricante(FabricanteCarro fabricante) {
+    public void setFabricante(FabricanteVeiculo fabricante) {
         this.fabricante = fabricante;
     }
 
@@ -62,4 +63,19 @@ public class Veiculo {
         this.corVeiculo = corVeiculo;
     }
 
+    public CorVeiculo getCorVeiculo() {
+        return corVeiculo;
+    }
+
+    public void setCorVeiculo(CorVeiculo corVeiculo) {
+        this.corVeiculo = corVeiculo;
+    }
+
+    public Long getQuilometragemAtual() {
+        return quilometragemAtual;
+    }
+
+    public void setQuilometragemAtual(Long quilometragemAtual) {
+        this.quilometragemAtual = quilometragemAtual;
+    }
 }

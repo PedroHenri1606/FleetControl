@@ -2,14 +2,14 @@ package org.example;
 
 import java.math.BigDecimal;
 
-public class ModeloCarro {
+public class ModeloVeiculo {
 
     private BigDecimal id;
     private String nomeModelo;
-    private FabricanteCarro fabricante;
+    private FabricanteVeiculo fabricante;
     private TipoVeiculo tipoVeiculo;
 
-    public ModeloCarro() {
+    public ModeloVeiculo() {
     }
 
     public BigDecimal getId() {
@@ -28,11 +28,11 @@ public class ModeloCarro {
         this.nomeModelo = nomeModelo;
     }
 
-    public FabricanteCarro getFabricante() {
+    public FabricanteVeiculo getFabricante() {
         return fabricante;
     }
 
-    public void setFabricante(FabricanteCarro fabricante) {
+    public void setFabricante(FabricanteVeiculo fabricante) {
         this.fabricante = fabricante;
     }
 
